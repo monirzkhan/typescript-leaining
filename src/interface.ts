@@ -45,10 +45,17 @@ console.log(user1, user2, user3);
 
 
 //interface with function
-
 interface IAdd{
     (num1: number, num2: number):number
 }
 
 const add: IAdd =(num1, num2)=> num1+num2;
 console.log(add(10,30));
+
+//interface with array
+interface friendsList{
+    [index: number]: string;
+}
+
+const friends: friendsList = ['Alice', 'Bob', 'Charlie'];
+console.log(friends);
